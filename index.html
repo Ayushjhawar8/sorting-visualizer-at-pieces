@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Visualizer</h1>
+        <div id="array-container"></div>
+        <div class="controls">
+            <button onclick="generateArray()">Generate Array</button>
+            <button onclick="startSorting('bubble')">Bubble Sort</button>
+            <button onclick="startSorting('selection')">Selection Sort</button>
+            <button onclick="startSorting('insertion')">Insertion Sort</button>
+            <button onclick="resetArray()">Reset</button>
+            <label for="speed">Speed: </label>
+            <input id="speed" type="range" min="10" max="200" value="50">
+            <span id="speed-value">50ms</span>
+        </div>
+        <div id="algorithm-info"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
